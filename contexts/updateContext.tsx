@@ -64,9 +64,10 @@ const UpdateStateProvider = ({ children }: UpdateStateProviderProps) => {
     }
   }
 
-  React.useEffect(() => {
-    update_timer()
-  }, [not_older_than, isThereAnyLoadingData]);
+  // NOTE: comment to see if this is the issue
+  // React.useEffect(() => {
+  //   update_timer()
+  // }, [not_older_than, isThereAnyLoadingData]);
 
   return (
     <Provider
